@@ -1,0 +1,336 @@
+#   Created by wpw to keep terminal history on 07/28/2024.
+#   At 1345, 300 lines 333 lines.
+
+PS C:\Users\Raphael\Dropbox\Git\git-repo2\.git> cd ..
+PS C:\Users\Raphael\Dropbox\Git\git-repo2> cd ..
+PS C:\Users\Raphael\Dropbox\Git> md .\new-repo
+
+    Directory: C:\Users\Raphael\Dropbox\Git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----        2024-07-28     12:30                new-repo
+
+
+PS C:\Users\Raphael\Dropbox\Git> dir
+
+
+    Directory: C:\Users\Raphael\Dropbox\Git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----        2023-08-27     16:09                First_Git_Repo
+da----        2023-08-18     15:28                fuzzy-happiness
+da----        2024-07-27     11:36                git-repo
+da----        2024-07-28     12:19                git-repo2
+da----        2023-11-30     11:00                Java
+da----        2024-07-06     17:47                lab
+da----        2023-11-30     12:56                log
+da----        2023-07-24     19:06                OneDrive_2023-07-25        
+da----        2023-08-05     13:49                Working
+-a----        2024-07-27     20:17            464 sshkeycodecheckmate        
+-a----        2024-07-27     20:17            111 sshkeycodecheckmate.pub    
+
+
+PS C:\Users\Raphael\Dropbox\Git> cd .\new-repo\
+PS C:\Users\Raphael\Dropbox\Git\new-repo> git init
+Initialized empty Git repository in C:/Users/Raphael/Dropbox/Git/new-repo/.git/
+On branch master
+
+No commits yet
+
+        new file:   README.md
+
+adme.md"
+[master (root-commit) 5a64016] First commit. Add readme.md
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+PS C:\Users\Raphael\Dropbox\Git\new-repo> git remote add origin https://github.com/nomanisanisland/new-repo.git
+PS C:\Users\Raphael\Dropbox\Git\new-repo> git status
+On branch master
+nothing to commit, working tree clean
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Raphael\Dropbox\Git\new-repo> git push --set-upstream origin mastEnumerating objects: 3, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nomanisanisland/new-repo.git
+ * [new branch]      master -> master
+PS C:\Users\Raphael\Dropbox\Git\new-repo> cd ..
+PS C:\Users\Raphael\Dropbox\Git> git clone https://github.com/nomanisanisland/gitrepo3.git
+Cloning into 'gitrepo3'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+PS C:\Users\Raphael\Dropbox\Git> dir
+
+
+    Directory: C:\Users\Raphael\Dropbox\Git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----        2023-08-27     16:09                First_Git_Repo
+da----        2023-08-18     15:28                fuzzy-happiness
+da----        2024-07-27     11:36                git-repo
+da----        2024-07-28     12:19                git-repo2
+da----        2024-07-28     12:36                gitrepo3
+da----        2023-11-30     11:00                Java
+da----        2024-07-06     17:47                lab
+da----        2023-11-30     12:56                log
+4080172 OneDrive_2023-07-25.zip
+-a----        2024-07-27     20:17            464 sshkeycodecheckmate
+-a----        2024-07-27     20:17            111 sshkeycodecheckmate.pub
+
+
+PS C:\Users\Raphael\Dropbox\Git> cd .\gitrepo3\
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> dir 
+
+    Directory: C:\Users\Raphael\Dropbox\Git\gitrepo3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024-07-28     12:38             66 firstpush.md
+-a----        2024-07-28     12:36             55 README.md
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        firstpush.md
+
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git add .\firstpush.md
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git status
+On branch master
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   firstpush.md
+
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git commit -m "Adds firstpush.txt"
+[master 8b60430] Adds firstpush.txt
+ 1 file changed, 3 insertions(+)
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nomanisanisland/gitrepo3.git
+   0550755..8b60430  master -> master
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> new-item -Name 'example.md'        
+
+    Directory: C:\Users\Raphael\Dropbox\Git\gitrepo3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024-07-28     12:47              0 example.md
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        example.md
+
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git add .\example.md
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git status
+On branch master
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   example.md
+
+[master a002c65] adds example.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 example.md
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+   8b60430..a002c65  master -> master     
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> 
+git status                                git status
+On branch master
+Your branch is up to date with 'origin/master'.ter'.
+
+nothing to commit, working tree clean     
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> 
+git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   example.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3>git add .
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git commit -m "Change a line in exa
+[master 6f89efc] Change a line in example.md
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git diff
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git diff
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git add .\README.md
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> git diff
+diff --git a/example.md b/example.md
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+~
+~
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)...skipping...
+diff --git a/example.md b/example.md
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
+←[32m+This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)...skipping...
+index 9b285e0..c36e8fb 100644
+--- a/example.md
++++ b/example.md
+@@ -1 +1,3 @@
+-This is a new line.
+\ No newline at end of file
++This is a new line.
++
++Another line.
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3>
+PS C:\Users\Raphael\Dropbox\Git\gitrepo3> 
