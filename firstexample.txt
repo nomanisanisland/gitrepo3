@@ -1,1 +1,3 @@
 This file is a good example of what happens when you change a file's name in Git.
+
+Now this is what I call important content.
