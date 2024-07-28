@@ -1,0 +1,7 @@
+#   Can use regex
+
+filelog1.txt
+
+logs/
+
+logs/*.txt
